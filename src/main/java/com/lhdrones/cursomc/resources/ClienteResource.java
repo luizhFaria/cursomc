@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.lhdrones.cursomc.domain.Cliente;
 import com.lhdrones.cursomc.services.ClienteService;
 
-
 @RestController
 @RequestMapping(value="/clientes")
 public class ClienteResource {
@@ -19,7 +18,7 @@ public class ClienteResource {
 	private ClienteService service;
 	
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
-	public ResponseEntity<?> find(@PathVariable Integer id) {
+	public ResponseEntity<Cliente> find(@PathVariable Integer id) {
 		Cliente obj = service.find(id);
 		return ResponseEntity.ok().body(obj);
 	}

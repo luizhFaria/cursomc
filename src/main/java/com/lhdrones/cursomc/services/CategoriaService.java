@@ -9,8 +9,6 @@ import com.lhdrones.cursomc.domain.Categoria;
 import com.lhdrones.cursomc.repositories.CategoriaRepository;
 import com.lhdrones.cursomc.services.exceptions.ObjectNotFoundException;
 
-
-
 @Service
 public class CategoriaService {
 
@@ -25,6 +23,11 @@ public class CategoriaService {
 	
 	public Categoria insert(Categoria obj) {
 		obj.setId(null);
+		return repo.save(obj);
+	}
+	
+	public Categoria update(Categoria obj) {
+		find(obj.getId());
 		return repo.save(obj);
 	}
 }

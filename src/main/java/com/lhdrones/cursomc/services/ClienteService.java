@@ -9,8 +9,6 @@ import com.lhdrones.cursomc.domain.Cliente;
 import com.lhdrones.cursomc.repositories.ClienteRepository;
 import com.lhdrones.cursomc.services.exceptions.ObjectNotFoundException;
 
-
-
 @Service
 public class ClienteService {
 	
