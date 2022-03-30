@@ -31,6 +31,8 @@ import com.lhdrones.cursomc.repositories.PagamentoRepository;
 import com.lhdrones.cursomc.repositories.PedidoRepository;
 import com.lhdrones.cursomc.repositories.ProdutoRepository;
 
+
+
 @SpringBootApplication
 public class CursomcApplication implements CommandLineRunner {
 
